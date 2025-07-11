@@ -1,0 +1,202 @@
+
+@import url(style.scss);
+@import url("https://fonts.googleapis.com/css? family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
+
+.navbar.navbar-light.bg-0001 {
+  width: 100vw; 
+  box-sizing: border-box; 
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000;
+}
+thg{
+  color: #ffffff;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+thgh{
+  color: #ff0000;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+  left: 10px;
+  text-decoration: underline rgb(255, 255, 255) 3px;
+
+}
+.search-input {
+  width: 25%; 
+  height: 40px; 
+  border-radius: 20px; 
+  padding: 0 15px; 
+  font-size: 14px; 
+  background-color: #eeeeee;
+  border: 2px solid transparent;
+  box-shadow: 5 10 10px rgba(0, 0, 0, 0.1);
+  color: #5C2C45;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  display: block; 
+  margin: 0 auto; 
+  transition: border 0.4s ease;
+  transition-delay: 0.1s;
+}
+
+.search-input:hover{
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.search-input::placeholder {
+  color: black;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+}
+.navbar-toggler {
+  border: none; 
+  background-color: white; 
+  color: #ffffff; 
+}
+.form-control:hover,.form-control:focus {
+   color: black;
+   border: 2px solid rgb(0, 0, 0);
+  color: black;
+   border: 2px solid rgb(0, 0, 0);
+   
+}
+.navbar-nav{
+  color: #ffffff;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.navbar-toggler {
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+
+}
+.navbar-toggler:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0px 8px rgb(255, 255, 255);
+}
+.w{
+  color: #ffffff;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+  left: 10px;
+  text-decoration: underline rgb(255, 255, 255) 3px;    
+}
+.w:hover{
+  color:rgb(255, 255, 255);
+  text-decoration: underline rgb(255, 255, 255) 3px;
+  
+}
+.w:focus{
+  color: #ff0000;
+  text-decoration: underline rgb(255, 255, 255) 3px;
+}
+filterss{
+ 
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+
+}
+.dp{
+  color: #000000;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  text-align: center;
+  display: block;
+  padding: 6px 0;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.699);
+}
+.dp:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.jadedm {
+  max-height: auto;
+  max-width: auto;
+  overflow-y: auto;
+  transition: max-height 0.3s ease;
+}
+aser{
+  color: #ffffff;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  left: 20px;
+  text-align: center;
+  display: block;
+  padding: 6px 0;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  background: rgba(44, 43, 43, 0.37);
+  
+
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+
+  @keyframes glow {
+    from {
+
+      color: #9e9c9c8f;
+    }
+    to {
+      color: #ffffff;
+    }
+  }
+
+  aserr{
+    color: #ffffff;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    position: relative;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    animation: fadeIn 0.8s ease, glow 1.5s infinite alternate;
+  }
+  .accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    border-color: #dee2e6;
+    background-color: #fff;
+    color: #212529;
+}
