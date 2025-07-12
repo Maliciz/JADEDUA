@@ -147,22 +147,38 @@ filterss{
   overflow-y: auto;
   transition: max-height 0.3s ease;
 }
-aser{
-  color: #ffffff;
-  font-family: 'Inria Sans', sans-serif;
-  font-weight: bold;
-  font-size: 15px;
+@keyframes moveRightInfinite {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.carousel-caption .fosw {
   position: relative;
-  left: 20px;
-  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+aser {
+  color: #ffffff;
+  font-family: 'Poppins', 'Inria Sans', sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: max-content;
+  text-align: start;
   display: block;
   padding: 6px 0;
   letter-spacing: 0.5px;
   border-radius: 8px;
-  background: rgba(44, 43, 43, 0.37);
-  
+  animation: moveRightInfinite 16s linear infinite, glow 1.5s infinite alternate;
+  white-space: nowrap;
+}
 
-  }
 
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px);}
@@ -199,4 +215,41 @@ aser{
     border-color: #dee2e6;
     background-color: #fff;
     color: #212529;
+}
+aserr1{
+    color: #ffffff;
+    font-family: 'Poppins', 'Inria Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    position: relative;
+    display: block;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    animation: fadeIn 0.8s ease, glow 1.5s infinite alternate;
+    transition: color 0.3s, background 0.3s;
+}
+  .btn-outline-dark:hover{
+    color: #000000;
+    box-shadow: 0 0px 8px rgb(255, 255, 255);
+    
+    border-color: #000000;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.699);
+  }
+.btn-outline-dark {
+  color: #000000;
+  border-color: #ffffff;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 20px;
+  transition: 
+    color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
