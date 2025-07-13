@@ -3,117 +3,61 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Sales - JadedUA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="/colorbuttons.css" rel="stylesheet" />
-    <link href="/style.css" rel="stylesheet" />
-      <link href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" rel="stylesheet">
+    <link href="../colorbuttons.css" rel="stylesheet" />
+    <link href="../style.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEX////+/v4fHx8AAAAODg74+PgYGBgdHR2Hh4cUFBTg4OD7+/vj4+P09PTd3d0aGhpDQ0OAgICjo6N0dHTp6elMTExbW1smJiYLCwu9vb2ysrLv7+/MzMysrKw2NjYrKytUVFRjY2PHx8dsbGw7OzuRkZHV1dWOjo6EhIQ5OTl5eXmamppXV1eenp7Ly8t3k23YAAAMg0lEQVR4nO2bC3OqvBaGAwlg5BJUlKugomh1t///550kqJUQLW11zt7frGc6vQGBl6ysSxIRAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP5hDJR7HcaReorrjXvk/MIeUaBl7EW5e76Zeveg33QfX5xqje+2bmmepW1e4k7jDvbkfOACasKEKuARcpWz+OPPsBZahet9FhjIUK4xkI+J2nQfM+VPhMaVtnES1qdAbVe2ff3NnTLnlmSmKsyYYyrQVaSexRVOiHqexHFsSuPwmLq91+LjXtP9y2Op0AuZ+IMxmxIipL2tJ9O0CLiBWBqBHYXdm1BFIfI1D+6wDKlN3lV4voLgMM3VtvGXAk2TK3R5H24pTYQ9rNaz0XsanA1fmGL/UW4Voi8VBvLlKSSj/ot7qFA2ndRFp/FBCplQiJD3Z14fTtmmyY3OKLvHN/pwqntuex59X6FjknI5WKEj7DHh9siElbq+5+WtS+m0cFfoN/owtHX3p8te018q5LBkFn2ORr1CIY3bY7xd1cddtuH2KC9wNa7qAcP7MNe/Zrr6kULTwbV3fdCOQkdqI4SZ4WK2m2ZpEfXG2SsUoqVeoZP4qsRBCk0T11c/fFbIGKNEuv5qNTuljRf55/jJe899ZIpDFH5lpf4feudBs57vH6bQpHOvvQUP4zhJEqfazheT96yJLDVY/4KhfYiK8k7EojO1E4cqNMnMPSv0V5PTkvtH75L0/LDDfqHQmGpChYRtG6UTBygUToR7ETy93DzyjSf12V2Fj63UjdZ3jJT3xFRt84FCh4+0hMaliNc8gzu7R+k5vuE9fqTwcR+iQhsqWoVHNUPRKpSuH9vlio+09CNoO+1ipU8XdSkW3MEK9/e7hZVB9/3fKrzmj7Sa17us4emj9SJzNNqx27ZuRU12mqwtwx1opai6NwxFJ+76fei0Mc0U7rGe7JYbz3iee9Rpk/KsPPKCj+z9uCh5zEkIfh9qpah4lDfaW1WhiGltvE6LceseXzbOLkSbdLmb/dmalMdTu9Vir8ZooMKH3tHBUSevR6fZ+0ZUpL5r3E35f4Fsz73axHks++lcFJkdW3PMDA2yUhTN7zsaofDUlXGtZl7j+2XjVj5uNst9HX5WqGi6VR0+mViD+hCllT7cO45Ijctw72se5kVW6UYBt8fTYV06BCeUXBIjkdlttspz2tejDxUi9/323TjMZDJcc3sv6xO3x4iHtVfoEY1eOu3qorx1WJncP9N2xoGXb1cNrpGq/oJthlgp8s6Fk6zUqM3jNQ/Xy03weedX+X7etp/nXpG+TxZvC1/8zwvJ7WzKrUIeGk6kqwKfBvVhyr2/TTExwz/16H2ZFkHeK0F/r6cnzucjLZvujut5RbgTIeuzwo4z6So0xspExK2/vKOQVy6oxpjH61O2Gee59br8sW1Xfs8LHq/r1bbiSR63R9lpdO2jG4PSKOQpjLVPOirsP/cUOjaeST8sarMm10XrJ3chckW8HjfL4zzGMl5Tm5k3z/S1QqPvFJ2323HI2rFGhYuKV7Ps0oeu6P6XuJK2rBW/NNw9jmarrfkZrlWosNIvFarzZfGtQjndg0tehPKRJsJ1+26fLOozLZbh2kunDXcnVcUIufhHPfYghb3QfaMwq0fTja+a49OHnMjfZP5YLPdrJt5pyhVix/lqTniQQnc8VzLo22Trouw1BnnF2vCkX7hH7h+FKvwhFH4hb3AfNt2g75Q3uafy80n0bABFC9LJH3EzTOGQcegaWdcWWKiZk3+WxHac5dw9diaNUWp237LJM4en9WE+I8pFT49rYuqvLdXGhYjX6zDG3bUNxRWw0NModPoMiRaoUApZMnqeQoSuP6LN9Fgv5jxeJzJcZ7d+S00d6TrXKIz7fThAITJWiifFmpWjn2iT8wZ+mym364ciXLN2SIgizWh9KD+exYrPTHZWT6G9ypEGebNHOU1+VN4UK5sfKnQv30T6KMqZbDqq/YtCtV5u3yOvP1xrGSolnBPzo8MUGjqF7KxQVDfNUU0WaJ3/ROFnuM7H6XRfr8IypgkRcU32VU9hermgOdjqfA8TFZxOof7G2j5s8dOw1zo5ud9TeG4qj8bFcrLeynidUNt22szYOqdBqsJRyslOswonvbCOxTTWL6yUbZei9eV+xXBvIoKVH8NCQ7sowkeaKGeWMl47tJdisfBs8z2FjMk1F6LLWnBg9BWyeeNpEPPHqkIxEStbp5rWydH/sg/Pb09OP/JCTbhH7h+paWras7M7Ch+QyAqm50vjuY5U40sFd/M9XBhaha0bkSWF7wXpaTavaFvOsEeZsfD731XIyjHS9GHbMbbd/aKZZhw+gojXpyq8mHzkScd42sY2Ib0BrIWLD76t8CS3AQzbqcC+qdAOA3TNGj9Hc+5tlrvjOtzI6GXqrPsuuF3xHq6QLlpXP1ih3krvYE+F60MyxTJEOdNsloe5I2pEQpJSLmpshtz45hHC7ylkcdDO575EId7LkcZ9SJAu3yf1qnSoKK/bNITJhV00Sr5opdvDTiK96VCFjKcC7ssUJgu/zUnWq7CiCQ9qt1UHmeXiaK6ubDu9jVhdZHAbqpCZ08tenBcoJPPgPAB5/tgbamxbSBeUKvkvCxcKyly4vRC5yDCFLF6iy5T78xUm6+Y86Y50h3EmQ4WlGilO/dy/Ja+7WhyeQwxUSKul8GXoNZ4mWUSXqQqdQjxrD/UmdXC3PtaUQjYvFIYoZHj7YX0uBTxZoY0nn0W3RiGdyHUWZKTKg9L6dhGhrYiUWkjWMl/v+qLVxLrd3vA9hV9EZ4eK5Oca6vsK8excjiBlQuCalV2fi3/VirMhBXK/UkiTOnU7S1NPVOgk5X6MblaKFIUOw4v8LNAnav94vRyvZ6bJ/pFCRy7HzVNfzfgHK0RIXZnoNE4wnnhWu36qU+iYND5ZlzRnySP/LXjXz2JRvrg9KyEJ9i10VK68QG0zrE8R6u8Iyu9ccUuSLMU1wdu91p1ydUytS4jV9yHZZpcQ5aJsMpIcJpLj8UPVx7HSw6jDZMyvVP7Xst+9L9PGR+omMdnMUXeFSiFOjXbaY/vdNNt4LurN9t4o5DnNuri+WNewOvDYoJsodl1LxdX8rz3wYEnO8vXXdJHLKHdOde/Mg14V2rRa3G7f+oxV18lwV7ePul+HcyeiK9Db1ty7ywT6azrXu9Z1srLfdn9u+0ahYyfJdrfxXz2f/38BiakWNt+nwWWI/tdA6SaQvf6fVCe4P/b/K7SR6ekrTn8Rz1QmM7FH1i5mva/hWGzdRrcHXuQGnqrQvZg8/8WyUKtA7kOXoecSRNo4xL8L7y/3qMsY4L7GHTxVYbQ7vssSGOWHen0Qn4tBwfG44alqejw0aDo5HA77D6vd85bv6nX7GahgdEz5a0gnk80TH+fMMxXypBjLfXT+jiSUZ8Fibr7BOPQMNMV2ingOi3GCS/H5JWtqil1AOBy7RuHgcmO4J4z7H0/5/VM9s63xnIjpQXQiJk+ybUcUYg02nYPPFcYpWlPnbcuzJ9YYKIsps03qJIsxKmKHznLjndr/gkJupTlh5E/WzGyb1ztCobO5KMRpVIQ2mVl+ZdNwWewdRndGUTkmm6J/QWEoFKJJQhfCayxN/idXaNpVflHYIBSt6DbIsB2KCY9NRbcRV+g4OJoSrvDprubpCnn1V4ulRFd85tSOA64wdvDuU6HhH5LqY0fwu6jE8wW1x03FYpPMdva/opALCYT7D+Y2CwJMFytSruyrQnefxJsRkZ8mcl1xclPRdU3iUHwQ7h9QaKAjSSYi+qUVDaMGk0NRMuZcrTSvSVlME1KLaqgJaTkuKjIptpQPxn9BoS+nGHFqoWZtk5HbYHpEIyw/49oqXFZ0zoWbdOqj8dEk67yokqMhPhv311tpwDtkdhzlc8KqdR3advXBfSmZoPyNtn1I60ldMT4E0Tph8aKe84iRId6HR8OdU+ev96VcIa+lzXGwomK7NIkz7m5wckRoYzKTK+RhJElILPbmRjWTKx/x1OXxEM+4BZRU84HU3z/VM9sar6qyrELPHe9LjKtapGINi0c8Ad1V2w2a8cPl23oqJxOiU5jgeJHywViE8URs4S2rp+zvUZ7qmbiR2E8Q8UBheePAkymq5YmfyPc8H0Xn/QZiKZfn3JE8B4kVPvGzPQcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOP8Dh7MWYsAOFacAAAAASUVORK5CYII=">
+    <link href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-
-     <script src="/script.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-</head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+     <script src="../script.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="your-react-component.js" type="text/babel"></script>
+  </head>
 <body>
  
   
-  <nav class="navbar navbar-light bg-0001 navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    
-    <div class="container-fluid d-flex justify-content-center align-items-center">
-      <a class="navbar-brand me-3" href="/"><thg>JADEDUA</thg></a>
-      <form class="d-flex justify-content-center" style="width: 90%;">
-      
-      </form>
-    
-   <div class="cont2">
-    
-  
-   
-    
-       
-   
-          <a class="nav-link dropdown-toggle w" href="#" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false">
-         FILTER&SORT
-          </a>
-         
-
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p class="dp"><a href="catalog/man.html" class="dp">Men</a></p>
-    <p class="dp"> <a href="catalog/woman.html" class="dp">Women</a></p>
-    <p class="dp"><a href="catalog/instock.html" class="dp">In Stock</a></p>
-    <p class="dp"><a href="catalog/sales.html" class="dp">Sales</a></p>
-    <p class="dp"><a href="catalog/unisex.html" class="dp">Unisex</a></p>
-    
-  </div>
-</div>
-        
-      
-    
-  </div>
-  <a class="navbar-brand me-3" href="catalog/sales.html"><thgh>SALES</thgh></a>
-</div>
-  </nav>
-<div class="big-card">
-    <img src="https://assets.jadedldn.com/image/upload/e_sharpen:50,w_1600,c_limit/shopi/cdn/shop/files/NEW_IN_DESK_22433c37-afa9-42d2-88b1-ba39b46511c8.jpg?v=1752070587" alt="Big Card" class="big-card-img">
-    <div class="big-card-content">
-      <h1 class="big-card-title">Men's wear</h1>
-      <a href="#" class="big-card-btn">Shop New In</a>
-    </div>
-  </div>
 
 
-<div class="category-row">
-  <div class="category-card">
-    <img src="https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/MW_SHORTS_TILE_UK.jpg?v=1750769931" alt="Shorts">
-    <div class="category-label">Shorts</div>
-  </div>
-  <div class="category-card">
-    <img src="https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/sunnies_tile_MW.jpg?v=1752067336" alt="Eyewear">
-    <div class="category-label">Eyewear</div>
-  </div>
-  <div class="category-card">
-    <img src="https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/JOGGERS_8e4880da-09a1-456f-b228-3c14dd7e0a55.jpg?v=1752147015" alt="Joggers">
-    <div class="category-label">Joggers</div>
-  </div>
-  <div class="category-card">
-    <img src="https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/DENIM_2bba4233-f563-429f-a2c0-4003f1e27601.jpg?v=1752070589" alt="Denim">
-    <div class="category-label">Denim</div>
-  </div>
-</div>
-<div class="big-card">
-    <img src="https://assets.jadedldn.com/image/upload/e_sharpen:50,w_1600,c_limit/shopi/cdn/shop/files/DESK_PLACEBO.jpg?v=1752153579" alt="Big Card" class="big-card-img">
-    <div class="big-card-content">
-      <h1 class="category-label Placebo">Shop Placebo</h1>
-      
-    </div>
-  </div>
-  <div id="carouselExample" class="carousel slide">
- 
-<div class="card info-card  my-4 ms-3" style="margin-right:auto; max-width:350px;">
-  <div class="drops-list"></div>
-    <div class="drop-item  py-1">
-      <button class="drop-toggle d-flex justify-content-between align-items-center w-100 bg-transparent border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#drop1" aria-expanded="false" aria-controls="drop1" style="font-weight:600;">
-        Customer Service
-        <span class="drop-icon">+</span>
-      </button>
-      <div class="collapse mt-2" id="drop1">
-        
-        <div class="ps-2 small text-muted">
-          <ul class="list-unstyled mb-0">
-            <li>Contact Us</li>
-            <li>Delivery</li>
-            <li>Returns</li>
-            <li>Size Guide</li>
-            <li>FAQ</li>
-            <li>Account Login</li>
-          </ul>
+<nav class="navbar navbar-light bg-white border my-1 mb-1" style="box-shadow:0 0 0 1px #222;">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <span class="fw-bold fs-5 ms-2" > <a  class="navbar-brand "href="../">JADEDUA</a></span>
+        <div class="d-flex align-items-center">
+            <a href="#" class="text-dark me-3 fs-5"><i class="ri-search-line"></i></a>
+            <a href="#" class="text-dark me-3 fs-5"><i class="ri-heart-line"></i></a>
+            <a href="#" class="text-dark me-3 fs-5"><i class="ri-shopping-bag-line"></i></a>
+            <a href="#" class="text-dark fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                <i class="ri-menu-line"></i>
+            </a>
         </div>
-
-      </div>
     </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold" id="offcanvasMenuLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+            <ul class="list-unstyled mb-0">
+                <li><a href="../catalog/man.html" class="d-block py-2 px-3 text-dark text-decoration-none">Men</a></li>
+                <li><a href="../catalog/woman.html" class="d-block py-2 px-3 text-dark text-decoration-none">Women</a></li>
+                <li><a href="../catalog/instock.html" class="d-block py-2 px-3 text-dark text-decoration-none">In Stock</a></li>
+                <li><a href="../catalog/sales.html" class="d-block py-2 px-3 text-dark text-decoration-none">Sales</a></li>
+                <li><a href="../catalog/unisex.html" class="d-block py-2 px-3 text-dark text-decoration-none">Unisex</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  
+
+
+
+
+  <div id="react-cards" class="container my-5"></div>
+
+    
     <div class="drop-item  py-1">
       <button class="drop-toggle d-flex justify-content-between align-items-center w-100 bg-transparent border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#drop2" aria-expanded="false" aria-controls="drop2" style="font-weight:600;">
         Brand
@@ -133,7 +77,6 @@
         </div>
         </div>
       </div>
-    
     <div class="drop-item  py-1">
       <button class="drop-toggle d-flex justify-content-between align-items-center w-100 bg-transparent border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#drop3" aria-expanded="false" aria-controls="drop3" style="font-weight:600;">
         Student Discount
@@ -193,9 +136,131 @@
   <script>
    
   </script>
-
+<script src="../main.jsx"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  
+  <script type="text/babel">
+  function Card({ title, sales ,price, image, comment }) {
+    return (
+      <div className="col-md-3 mb-2">
+        <div className="card h-100 shadow-sm dp">
+          <img src={image} className="card-img-top" alt={title} />
+          <div className="card-body text-center">
+            <h6 className="card-title">{title}</h6>
+            <p className="card-text fw-bold sales">{sales}</p>
+            <p className="card-text fw-bold newprice">{price}</p>
+            <h6 className="card-text fw-bold ">{comment}</h6>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  function App() {
+    const products = [
+      {
+        title: "Freshman T-Shirt",
+        price: "₴2,157",
+        sales: "₴2,838",
+         comment:"2 Colours",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/Artboard1_f54c287b-bf94-4433-afe1-58f9fc297bcf.jpg?v=1752146895",
+      },
+      {
+        title: "Eagle XL Colossus Jeans",
+        price: "₴4,074",
+        sales: "₴5,196",
+         comment:"20 Colours",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/Artboard4_4d0d11d4-9e64-47ae-b95a-0320a40fa63f.jpg?v=1752146961",
+      },
+      {
+        title: "Sketch Pinstripe Shirt",
+        price: "₴2,838",
+        sales: "₴3,595",
+         comment:"Illustration by Jaded",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/JADEDECOM30-06-2586.jpg?v=1751535355",
+      },
+      {
+       title: "Sand Black Colossus Jorts",
+        price: "₴2,838",
+        sales: "₴3,595",
+         comment:"Illustration by Jaded",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/JADEDECOM30-06-25558.jpg?v=1751559957",
+      },
+       {
+         title: "Americana Mini Monster Hoodie",
+        price: "₴3,595",
+        sales: "₴4,074",
+         comment:"2 Colours",
+        comment:"Illustration by Maliciz",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/JADEDECOM30-06-2560.jpg?v=1751624751",
+      },
+      {
+         title: "Spike Airbrush XL Colossus Jeans",
+        price: "₴4,074",
+        sales: "₴5,196",
+         comment:"20 Colours",
+        comment:"Illustration by Jaded",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/4JULECCOM1204.jpg?v=1751889247",
+      },
+       {
+         title: "Save Me Oversized Hoodie",
+        price: "₴3,595",
+        sales: "₴4,074",
+         comment:"2 Colours",
+        comment:"2 Colours",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/JMH5442_B1_0525.jpg?v=1747737840",
+      },
+       {
+        title: "Club Belt",
+        price: "₴2,157",
+        sales: "₴2,838",
+        comment:"100% Real Leather",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/JMA5385.jpg?v=1749734500",
+      },
+       {
+        title: "Vintage Blue Feather Drift Flared Jeans",
+        price: "₴4,074",
+        sales: "₴5,196",
+        comment:"8 Colours",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/26MARCHMW1739.jpg?v=1743669656",
+      },
+       {
+        title: "Divine Solutions Ringer T-Shirt",
+        price: "₴1,917",
+        sales: "₴2,157",
+        comment:"1 Colours",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/JMT5768_F2_0325_1d9eddd5-26ad-4ca7-8203-8d6dfd189c8c.jpg?v=1744723942",
+      },
+       {
+        title: "White Vapor Tracksuit Top",
+        price: "₴3,355",
+        sales: "₴4,074",
+        comment:"5 Colours",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/Artboard3_e2ce0744-d33d-4e96-b1db-c4e6b4d612da.jpg?v=1749738813",
+      },
+       {
+        title: "White Vapor Tracksuit Bottomst",
+        price: "₴3,355",
+        sales: "₴4,074",
+        comment:"5 colours",
+        image: "https://assets.jadedldn.com/image/upload/e_sharpen:50,w_800,c_limit/shopi/cdn/shop/files/JMJ5788_F1_0325_9d8e44b2-7204-4e29-a5e0-e1b22655553b.jpg?v=1746804035",
+      },
+       
+    ];
+
+    return (
+      <div className="row">
+        {products.map((product, i) => (
+          <Card key={i} {...product} />
+        ))}
+      </div>
+    );
+  }
+
+  const root = ReactDOM.createRoot(document.getElementById("react-cards"));
+  root.render(<App />);
+</script>
+<script src="../script.js"></script>
 </body>
 </html

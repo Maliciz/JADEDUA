@@ -272,3 +272,10 @@ aserr1{
   color: #fff;
   box-shadow: 0 0px 8px rgba(255, 255, 255, 0.5);
 }
+.sales{
+  text-decoration: line-through;
+  color: #21252975;
+}
+.newprice{
+  color: #fd1414;
+}
